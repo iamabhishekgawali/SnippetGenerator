@@ -1,0 +1,3 @@
+urls mapping in Django
+How to render Templates  , Render Function
+How to add static files Ex external CSS , Load Static and all
