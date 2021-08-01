@@ -19,13 +19,13 @@ body{
 .outer1-box1{
     margin-top:10px;
     margin-left: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     flex: 1;
 }
 
 .outer1-box2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     flex: 1;
     text-align: end;
@@ -39,12 +39,12 @@ body{
 
 }
 
-
 .outer2-box1{
     flex: 1;
     display: flex;
     flex-direction: column;
     background-color: #E0E0E0;
+    border-radius: 4px;
 }
 
 .tab-trigger
@@ -66,7 +66,7 @@ textarea{
     padding: 20px;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .description{
@@ -84,12 +84,12 @@ textarea{
 
 }
 
-input{
+.left-upper{
     width: 100%;
     height: 50px;
     padding: 15px;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     box-sizing: border-box;
 }
 
@@ -97,4 +97,17 @@ input{
     margin-left: 8px;
     background-color: #E0E0E0;
     flex: 1;
+    border-radius: 4px;
+}
+
+
+
+input[type="radio"]{
+    display: none;
+}
+
+
+label{
+    font-family: 'Roboto mono';
+
 }

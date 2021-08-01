@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -20,50 +25,70 @@
 
     <form action="POST">
 
-    <div class="outer1">
+        <div class="outer1">
 
-        <div class="outer1-box1">
-            <h2>
-                Snippet Generator
-            </h2>
-
-        </div>
-        <div class="outer1-box2">
-
-            <p>Made by Abhishek Gawali</p>
-
-        </div>
-
-    </div>
-
-    <div class="outer2">
-
-        <div class="outer2-box1">
-
-            <div class="tab-trigger">
-
-                <div class="description">
-                    <input type="text" name="description" placeholder="Description.."> </input>
-                </div>
-
-                <div class="tag">
-                    <input type="text" name="tag" placeholder="Tab trigger..."> </input>
-                </div>
-
+            <div class="outer1-box1">
+                <h2>
+                    Snippet Generator
+                </h2>
 
             </div>
-            <div class="snippet">
+            <div class="outer1-box2">
 
-                <textarea name="code" placeholder="Insert Your Snippet Here :)" ></textarea>
+                <p>Made by Abhishek Gawali</p>
 
             </div>
 
         </div>
-        <div class="outer2-box2">
+
+        <div class="outer2">
+
+            <div class="outer2-box1">
+
+                <div class="tab-trigger">
+
+                    <div class="description">
+                        <input class = "left-upper" type="text" name="description" placeholder="Description.."> </input>
+                    </div>
+
+                    <div class="tag">
+                        <input  class="left-upper" type="text" name="tag" placeholder="Tab trigger..."> </input>
+                    </div>
+
+
+                </div>
+                <div class="snippet">
+
+                    <textarea name="code" placeholder="Insert Your Snippet Here :)"></textarea>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="outer2-box2">
+
+
+                <div class="Buttons1">
+
+
+                    <input type="radio" id="vsc"  name = "VSCode" checked="checked">
+                    <label for="vsc">VS Code</label>
+
+
+                </div>
+
+
+
+            </div>
+
+
 
         </div>
 
-    </div>
+        </div>
     </form>
 </body>
 
