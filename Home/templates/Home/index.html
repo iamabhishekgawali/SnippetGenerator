@@ -20,11 +20,11 @@
 
 </head>
 
-<body>
+<body id="letsee">
+    
 
-
-    <form action="POST">
-
+    <form method="POST">
+        {% csrf_token %}
         <div class="outer1">
 
             <div class="outer1-box1">
@@ -48,11 +48,11 @@
                 <div class="tab-trigger">
 
                     <div class="description">
-                        <input class = "left-upper" type="text" name="description" placeholder="Description.."> </input>
+                        <input class="left-upper" type="text" name="description" placeholder="Description.."> </input>
                     </div>
 
                     <div class="tag">
-                        <input  class="left-upper" type="text" name="tag" placeholder="Tab trigger..."> </input>
+                        <input class="left-upper" type="text" name="tag" placeholder="Tab trigger..."> </input>
                     </div>
 
 
@@ -66,29 +66,25 @@
             </div>
 
 
-
-
             <div class="outer2-box2">
 
-
-                <div class="Buttons1">
-
-
-                    <input type="radio" id="vsc"  name = "VSCode" checked="checked">
-                    <label for="vsc">VS Code</label>
-
-
+                <div class="buttons">
+                    <input class="myradio"  type="radio" id="vscode" name="radiobtn" checked="checked" value="vscode" >
+                    <label for="vscode">VS Code</label>
+                    <input class="myradio"  type="radio" id="sublimetext" name="radiobtn" value="sublimetext">
+                    <label for="sublimetext">Sublime Text</label>
+                    <input class="myradio"  type="radio" id="atom" name="radiobtn" value="atom">
+                    <label for="atom">Atom</label>
                 </div>
-
-
 
             </div>
 
 
-
         </div>
 
         </div>
+        
+        <input type="submit">
     </form>
 </body>
 
