@@ -48,18 +48,18 @@
                 <div class="tab-trigger">
 
                     <div class="description">
-                        <input class="left-upper" type="text" name="description" placeholder="Description.."> </input>
+                        <input class="left-upper" type="text" name="description" placeholder="{{List.Description}}"> </input>
                     </div>
 
                     <div class="tag">
-                        <input class="left-upper" type="text" name="tag" placeholder="Tab trigger..."> </input>
+                        <input class="left-upper" type="text" name="tag" placeholder="{{List.tag}}"> </input>
                     </div>
 
 
                 </div>
                 <div class="snippet">
 
-                    <textarea  class="left-textarea" name="code" placeholder="Insert Your Snippet Here :)"></textarea>
+                    <textarea  class="left-textarea" name="code" placeholder="{{List.code}}"></textarea>
 
                 </div>
 
@@ -79,7 +79,7 @@
 
                 <div class="right-textarea">
 
-                    <textarea  class="codesnippet" name="codesnippet" placeholder="{{values}}"></textarea>
+                    <textarea  class="codesnippet" name="codesnippet" placeholder= "{{ List.text }}" ></textarea>
 
                     <input class="Submit-form" type="submit">
 

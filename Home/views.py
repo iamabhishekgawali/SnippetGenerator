@@ -2,12 +2,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def Convert(Description,tag,code,texteditor):
+def Convert(List,Description,tag,code,texteditor):
     pass
 
 def home(request):
     
-    text="Your Snippet will be generated here"
+
+    List = {
+            'text' : "Your Snippet will be generated here",
+            'Description' : "Description..",
+            'tag' : "Tab Trigger .. ",
+            'code' : "Enter your code here :)",
+             
+        }
+    
 
     if(request.method=='POST'):
         texteditor = request.POST.get("radiobtn")
@@ -21,6 +29,6 @@ def home(request):
         print(tag)
         print(code)
     
-    return render(request,"Home/index.html",{"values": text })
+    return render(request,"Home/index.html",{"List": List })
 
 
